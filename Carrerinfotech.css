@@ -1,0 +1,422 @@
+html{
+    scroll-behavior: smooth;
+}
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background-color:rgb(31, 50, 153);
+    height: 3520px;
+    margin: 0px;
+}
+
+.header {
+    background-color: blue;
+    height: 150px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+
+.branding {
+    background-color: aliceblue;
+    width: 30%;
+    height: 150px;
+    float: left;
+    
+}
+
+.branding img {
+    height: 130px;
+    width: 120%;
+}
+
+.social {
+    background-color: rgb(154, 200, 6);
+    width: 70%;
+    height: 75px;
+    float: left;
+}
+.branding span{
+    
+    font-size: large;
+    position: relative;
+    left: 150px;
+    top: 0px;
+    font-weight: bold;
+}
+.menu {
+    background-color: rgb(31, 50, 153);
+    float: left;
+    height: 75px;
+    width: 70%;
+
+}
+.menu ul li{
+    background-color:rgb(245, 225, 42);
+    border:1px solid white;
+    width:200px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    list-style:none;
+    position: relative;
+    float:left;
+    
+}
+.menu ul ul li{
+    position: relative;
+    left: -40px;
+}
+.menu ul ul ul li{
+    position: relative;
+    left:1px;
+}
+/* ------------------------------------------------------------ */
+.menu ul li>ul li{
+    display: none; 
+
+}
+.menu ul li:hover {
+    background-color: green;
+    border-bottom: 7px solid rgb(96,121,187);
+    cursor: pointer;    
+}
+.menu ul li:hover ul li{
+    display:block;
+    border-left: 10px solid rgb(96,121,187);
+
+ }
+ .menu ul li a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    
+
+}
+/* -------------------------------------------------*/
+.menu ul ul ul{
+    display: none;
+   
+}
+.menu ul ul li:hover>ul{
+    position: absolute;
+    top:-1px;
+    left: 160px;
+    display: block;
+    
+}
+
+
+.hero {
+    background-color: palevioletred;
+    height: 400px
+}
+
+
+.backimg {
+   
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%; 
+}
+
+.formoimg {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    float: left;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    left: 70%;
+    top: 193px;
+    text-align: center;
+    box-sizing: border-box;
+    
+
+    
+}
+.formoimg h2{
+    color: blue;
+}
+
+input[type="text"] {
+    border-style: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    width: 300px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input[type="email"] {
+    border-style: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+select {
+    width: 300px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    margin-top: 9px;
+    display: block;
+    position: relative;
+    left: 150px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.content {
+    height: 900px;
+    background-color: rgb(96, 121, 187);
+}
+
+.product {
+    
+    background-color: whitesmoke;
+    height: 470px;
+    width: 60%;
+    margin: auto;
+}
+
+.product img {
+    float: left;
+    height: 300px;
+    
+}
+
+.product div {
+    float: left;
+    line-height: 30px;
+    margin-left: 50px;
+}
+.product-main h1{
+    color: blue;
+}
+.product-main h2{
+    color: red;
+}
+.product-main h3 span{
+    color: green;
+}
+.product-base h2{
+    color: blue;
+}
+.product-base h3{
+    color: green;
+
+}
+
+.lang {
+    height: 350px;
+}
+
+.lang ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.base-down{
+   
+    text-align: center;
+    width: 99%;
+     background-color:white;
+    border:10px solid green;
+    font-size: x-large;
+
+}
+.base-down h2{
+    color: red;
+}
+.base-down h3{
+    color: green;
+}
+
+
+.visit {
+    background-color: rgb(245, 244, 244);
+    height: 550px;
+    margin: auto;
+    text-align: center;
+    border: 10px solid rgb(253,60,79);
+}
+.visit a{
+    text-decoration: none ;
+}
+.visit a span{
+    border: 2px solid black;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.contact {
+    background-color: white;
+
+    
+    width: 50%;
+    height: 300px;
+    margin: auto;
+}
+.contact input[type="button"]{
+    display: block;
+    border: 5px solid black;
+    border-radius: 7px;
+    padding: 7px 10px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact-form div{
+    font-size: large;
+    font-weight:bold;
+}
+.formdiv {
+    float: right;
+    clear: both;
+    position: relative;
+    top: -270px;
+    
+    background-color: rgb(96, 121, 187);
+    
+}
+
+.formdiv ul li {
+    list-style: none;
+    color: darkblue;
+    font-size: large;
+    cursor: pointer;
+}
+
+.lang {
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    float: left;
+    
+    margin: auto;
+    background-color: white;
+
+    border-bottom: 2px solid rgb(96, 121, 187);
+
+
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: rgb(96, 121, 187);
+    text-align: center;
+    
+}
+.testimonial img{
+    border-radius: 50%;border: 5px solid black;
+}
+.testimonial h2{
+    color: blue;
+}
+.testimonial-anchor{
+    text-align: center; 
+    margin: 20px;
+}
+.testimonial-anchor a{
+    text-decoration: none;
+}
+.testimonial-anchor a span{
+    font-size: large; 
+    border: 2px solid black;
+    padding: 10px;color: black;
+    font-weight: bold;
+    background-color: rgb(253,60,79);
+}
+
+.head,
+.subhead {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.page-base {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    float: left;
+    top: -250px;
+    background-color: white;
+    
+
+}
+
+.page-base ul li {
+    list-style: none;
+
+}
+
+.title {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 25px;
+}
+
+.footer {
+    background-color: rgb(154, 200, 6);
+    height: 280px;
+    text-align: center;
+    
+}
+.footer h1{
+    text-align: center;}
+.footer h2 span{
+    color: red;}
+.footer h3 span{
+    color: red;
+    font-size:x-large;
+}
+.footer-after h2{
+    margin-left: 550px;
+    color: white;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+
+}
+.cube{
+    position:fixed;
+    bottom: 0px;
+    left:0px;
+}
