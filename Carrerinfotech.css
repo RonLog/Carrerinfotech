@@ -119,7 +119,7 @@ html{
 
 .backimg {
    
-    background-image: url(/img/banner.jpg);
+    background-image: url(./img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
