@@ -1,15 +1,31 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 .body {
     margin: 0;
     padding: 0;
 }
 
+.header_disclaimer {
+    color: white;
+    font-size: large;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.header_contact {
+    color: red;
+    font-size: large;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
 .main {
-    background-color:rgb(31, 50, 153);
+    background-color: rgb(31, 50, 153);
     height: 3520px;
     margin: 0px;
+    text-align: center;
 }
 
 .header {
@@ -22,94 +38,104 @@ html{
 }
 
 .branding {
-    background-color: aliceblue;
+    background-color: white;
     width: 30%;
     height: 150px;
     float: left;
-    
 }
 
 .branding img {
     height: 130px;
-    width: 120%;
+    width: 100%;
 }
 
 .social {
     background-color: rgb(154, 200, 6);
-    width: 70%;
-    height: 75px;
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.branding span{
-    
+
+.social_icon {
+    white-space: nowrap;
+}
+
+.branding span {
+    white-space: nowrap;
     font-size: large;
-    position: relative;
-    left: 150px;
-    top: 0px;
     font-weight: bold;
+    display: block;
 }
+
 .menu {
     background-color: rgb(31, 50, 153);
     float: left;
     height: 75px;
     width: 70%;
+}
+
+.menu ul li {
+    background-color: rgb(245, 225, 42);
+    border: 1px solid white;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    float: left;
 
 }
-.menu ul li{
-    background-color:rgb(245, 225, 42);
-    border:1px solid white;
-    width:200px;
-    height:30px;
-    line-height:30px;
-    text-align:center;
-    list-style:none;
-    position: relative;
-    float:left;
-    
-}
-.menu ul ul li{
+
+.menu ul ul li {
     position: relative;
     left: -40px;
 }
-.menu ul ul ul li{
+
+.menu ul ul ul li {
     position: relative;
-    left:1px;
+    left: 1px;
 }
+
 /* ------------------------------------------------------------ */
-.menu ul li>ul li{
-    display: none; 
+.menu ul li>ul li {
+    display: none;
 
 }
+
 .menu ul li:hover {
     background-color: green;
-    border-bottom: 7px solid rgb(96,121,187);
-    cursor: pointer;    
+    border-bottom: 7px solid rgb(96, 121, 187);
+    cursor: pointer;
 }
-.menu ul li:hover ul li{
-    display:block;
-    border-left: 10px solid rgb(96,121,187);
 
- }
- .menu ul li a {
+.menu ul li:hover ul li {
+    display: block;
+    border-left: 10px solid rgb(96, 121, 187);
+
+}
+
+.menu ul li a {
     text-decoration: none;
-    color:black;
+    color: black;
     font-weight: bold;
-    
+    white-space: nowrap;
+}
+
+/* -------------------------------------------------*/
+.menu ul ul ul {
+    display: none;
 
 }
-/* -------------------------------------------------*/
-.menu ul ul ul{
-    display: none;
-   
-}
-.menu ul ul li:hover>ul{
+
+.menu ul ul li:hover>ul {
     position: absolute;
-    top:-1px;
+    top: -1px;
     left: 160px;
     display: block;
-    
-}
 
+}
 
 .hero {
     background-color: palevioletred;
@@ -118,12 +144,12 @@ html{
 
 
 .backimg {
-   
+    position: relative;
     background-image: url(./img/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    width: 100%; 
+    width: 100%;
 }
 
 .formoimg {
@@ -135,18 +161,18 @@ html{
     padding: 10px;
     position: absolute;
     left: 70%;
-    top: 193px;
+    top: 30px;
     text-align: center;
     box-sizing: border-box;
-    
 
-    
 }
-.formoimg h2{
+
+.formoimg h2 {
     color: blue;
 }
 
 input[type="text"] {
+    outline: none;
     border-style: none;
     border-bottom: 2px solid black;
     background-color: transparent;
@@ -192,7 +218,6 @@ input[type="submit"] {
 }
 
 .product {
-    
     background-color: whitesmoke;
     height: 470px;
     width: 60%;
@@ -202,7 +227,6 @@ input[type="submit"] {
 .product img {
     float: left;
     height: 300px;
-    
 }
 
 .product div {
@@ -210,19 +234,24 @@ input[type="submit"] {
     line-height: 30px;
     margin-left: 50px;
 }
-.product-main h1{
+
+.product-main h1 {
     color: blue;
 }
-.product-main h2{
+
+.product-main h2 {
     color: red;
 }
-.product-main h3 span{
+
+.product-main h3 span {
     color: green;
 }
-.product-base h2{
+
+.product-base h2 {
     color: blue;
 }
-.product-base h3{
+
+.product-base h3 {
     color: green;
 
 }
@@ -236,19 +265,21 @@ input[type="submit"] {
     list-style: none;
 }
 
-.base-down{
-   
+.base-down {
+
     text-align: center;
     width: 99%;
-     background-color:white;
-    border:10px solid green;
+    background-color: white;
+    border: 10px solid green;
     font-size: x-large;
 
 }
-.base-down h2{
+
+.base-down h2 {
     color: red;
 }
-.base-down h3{
+
+.base-down h3 {
     color: green;
 }
 
@@ -258,12 +289,14 @@ input[type="submit"] {
     height: 550px;
     margin: auto;
     text-align: center;
-    border: 10px solid rgb(253,60,79);
+    border: 10px solid rgb(253, 60, 79);
 }
-.visit a{
-    text-decoration: none ;
+
+.visit a {
+    text-decoration: none;
 }
-.visit a span{
+
+.visit a span {
     border: 2px solid black;
     padding: 10px;
     color: black;
@@ -273,13 +306,14 @@ input[type="submit"] {
 
 .contact {
     background-color: white;
-
-    
-    width: 50%;
-    height: 300px;
-    margin: auto;
+    margin-top: 20px;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.contact input[type="button"]{
+
+.contact input[type="button"] {
     display: block;
     border: 5px solid black;
     border-radius: 7px;
@@ -288,18 +322,14 @@ input[type="submit"] {
     font-weight: bold;
     cursor: pointer;
 }
-.contact-form div{
+
+.contact_form div {
     font-size: large;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 .formdiv {
-    float: right;
-    clear: both;
-    position: relative;
-    top: -270px;
-    
     background-color: rgb(96, 121, 187);
-    
 }
 
 .formdiv ul li {
@@ -317,13 +347,9 @@ input[type="submit"] {
     width: 100%;
     position: relative;
     float: left;
-    
     margin: auto;
     background-color: white;
-
     border-bottom: 2px solid rgb(96, 121, 187);
-
-
 }
 
 .testimonial {
@@ -335,27 +361,34 @@ input[type="submit"] {
     width: 100%;
     background-color: rgb(96, 121, 187);
     text-align: center;
-    
+
 }
-.testimonial img{
-    border-radius: 50%;border: 5px solid black;
+
+.testimonial img {
+    border-radius: 50%;
+    border: 5px solid black;
 }
-.testimonial h2{
+
+.testimonial h2 {
     color: blue;
 }
-.testimonial-anchor{
-    text-align: center; 
+
+.testimonial-anchor {
+    text-align: center;
     margin: 20px;
 }
-.testimonial-anchor a{
+
+.testimonial-anchor a {
     text-decoration: none;
 }
-.testimonial-anchor a span{
-    font-size: large; 
+
+.testimonial-anchor a span {
+    font-size: large;
     border: 2px solid black;
-    padding: 10px;color: black;
+    padding: 10px;
+    color: black;
     font-weight: bold;
-    background-color: rgb(253,60,79);
+    background-color: rgb(253, 60, 79);
 }
 
 .head,
@@ -370,17 +403,11 @@ input[type="submit"] {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    position: relative;
-    float: left;
-    top: -250px;
     background-color: white;
-    
-
 }
 
 .page-base ul li {
     list-style: none;
-
 }
 
 .title {
@@ -393,17 +420,23 @@ input[type="submit"] {
     background-color: rgb(154, 200, 6);
     height: 280px;
     text-align: center;
-    
+
 }
-.footer h1{
-    text-align: center;}
-.footer h2 span{
-    color: red;}
-.footer h3 span{
+
+.footer h1 {
+    text-align: center;
+}
+
+.footer h2 span {
     color: red;
-    font-size:x-large;
 }
-.footer-after h2{
+
+.footer h3 span {
+    color: red;
+    font-size: x-large;
+}
+
+.footer-after h2 {
     margin-left: 550px;
     color: white;
 }
@@ -415,8 +448,75 @@ input[type="submit"] {
     cursor: pointer;
 
 }
-.cube{
-    position:fixed;
+
+.cube {
+    position: fixed;
     bottom: 0px;
-    left:0px;
+    left: 0px;
+}
+
+@media screen and (max-width:768px) {
+    .header_contact {
+        font-size: smaller;
+    }
+
+    .product {
+        width: auto;
+        height: auto;
+        white-space: nowrap;
+    }
+
+    .product>h1 {
+        font-size: small;
+    }
+
+    .menu ul {
+        display: flex;
+        font-size: small;
+    }
+
+    .branding {
+        width: auto;
+    }
+
+    .backimg {
+        margin-top: 210px;
+    }
+
+    .social {
+        width: fit-content;
+        font-size: 5px;
+    }
+
+    .page-base {
+        justify-content: center;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .visit {
+        height: auto;
+    }
+
+    .product div {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .product-base h2 {
+        font-size: small;
+    }
+
+    .base-down h2{
+        font-size: large;
+    }
+    .product img{
+        width:100%;
+    }
+    .footer-after h2 {
+        margin-left: 0px;
+        color: white;
+    }
 }
